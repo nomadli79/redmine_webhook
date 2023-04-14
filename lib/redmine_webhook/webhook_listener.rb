@@ -1,5 +1,5 @@
 module RedmineWebhook
-  class WebhookListener < Redmine::Hook::Listener
+  class WebhookListener < Redmine::Hook::ViewListener
 
     def skip_webhooks(context)
       return true unless context[:request]
